@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DbzModule } from './dbz/dbz.module';
+import { MainPageComponent } from './dbz/main-page/main-page.component';
 import { ContadorComponent } from './heroes/contador/contador/contador.component';
 
 import { ContadorModule } from './heroes/contador/contador/contador.module';
@@ -16,14 +18,15 @@ import { HeroesModule } from './heroes/heroes.module';
 @NgModule({
   declarations: [
     AppComponent,
-    ContadorComponent
-
+    ContadorComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HeroesModule,
-    ContadorModule
+    ContadorModule,
+    DbzModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
